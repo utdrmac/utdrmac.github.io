@@ -13,27 +13,27 @@
 * MySQL supports two algorithms that may be used when evaluating the SELECT expression.  
  * Certain query features will exclude the MERGE algorithm from possible use.
 * When you create a view, you have three choices:
- * ```ALGORITHM = MERGE```
- * ```ALGORITHM = TEMPTABLE```
- * ```ALGORITHM = UNDEFINED```
+ * `ALGORITHM = MERGE`
+ * `ALGORITHM = TEMPTABLE`
+ * `ALGORITHM = UNDEFINED`
 
 ---
 
 ## View Algorithm (cont.)
 
-* If the ```UNDEFINED``` algorithm is specified:
- * The ```MERGE``` algorithm is used if possible
- * The ```TEMPTABLE``` algorithm is used when query features exclude the MERGE algorithm. 
+* If the `UNDEFINED` algorithm is specified:
+ * The `MERGE` algorithm is used if possible
+ * The `TEMPTABLE` algorithm is used when query features exclude the MERGE algorithm. 
 
 ---
 
-## Features that force ```TEMPTABLE```
+## Features that force `TEMPTABLE`
 
-* ```DISTINCT```
-* ```GROUP BY``` and/or aggregation
-* ```HAVING```
-* ```LIMIT```
-* ```UNION``` or ```UNION ALL```
+* `DISTINCT`
+* `GROUP BY` and/or aggregation
+* `HAVING`
+* `LIMIT`
+* `UNION` or `UNION ALL`
 * Subquery in the select list
 * When there are no tables in the FROM clause
 
