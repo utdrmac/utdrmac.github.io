@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -28,6 +28,7 @@
       .footer { text-align: center; margin: 40px 0 100px 0; }
       .footer a { color: #999; font-family: Lato; font-weight: 300; font-size: 12px; }
       @media (min-width: 768px) { .container { margin-top: 50px; } }
+      @media print { .no-print, .no-print * { display: none !important; } }
     </style>
 </head>
 <body>
@@ -35,12 +36,10 @@
         <div class="row">
             <div class="col-sm-12">
                 <h1>Matthew Boehm
-                    <small>205.575.8258 <span class="sep">|</span>
-                        <a href="mailto:matthew@matthewboehm.com">matthew@matthewboehm.com</a> <span class="sep">|</span>
-                        <span style="display: inline-block; white-space: nowrap;">
-                            <a href="http://facebook.com/utdrmac"><i class="fa fa-facebook"></i></a> <span class="sep">|</span>
-                            <a href="http://github.com/utdrmac"><i class="fa fa-git"></i></a> <span class="sep">|</span>
-                            <a href="http://www.linkedin.com/in/matthewboehm/"><i class="fa fa-linkedin-square"></i></a>
+                    <small>
+                        <span style="display: inline-block; white-space: nowrap;" class="no-print">
+                            <a href="//github.com/utdrmac"><i class="fa fa-git"></i></a> <span class="sep">|</span>
+                            <a href="//www.linkedin.com/in/matthewboehm/"><i class="fa fa-linkedin-square"></i></a>
                         </span>
                     </small>
                 </h1>
@@ -51,9 +50,10 @@
             <div class="col-sm-3"><h3>Overview</h3></div>
             <div class="col-sm-9">
                 <ul style="padding-top: 12px">
-                    <li>MySQL Consultant / Architect, based in Houston, TX.</li>
+                    <li>MySQL Consultant / Architect / Trainer, based in Houston, TX.</li>
                     <li>Specializing in large, complex MySQL installations.</li>
-                    <li>Expert in PHP. Pretty good with C and bash one-liners.</li>
+                    <li>World-class instructor-led training delivery.</li>
+                    <li>Pretty good with C, PHP, GoLang, and bash one-liners.</li>
                 </ul>
             </div>
         </div>
@@ -62,11 +62,47 @@
             <div class="col-sm-3"><h3><strong>Public Events</strong></h3></div>
         </div>
         <div class="row">
-            <div class="col-sm-3"><h3>Percona Live MySQL Conference</h3></div>
+            <div class="col-sm-3"><h3>Percona Live MySQL Conference 2019 - Amasterdam</h3></div>
             <div class="col-sm-9">
                 <ul style="padding-top: 12px">
-                    <li>2015 Speaker - <a href="http://www.percona.com/live/mysql-conference-2015/sessions/your-backups-are-you-sure-they-work">Your Backups - Are you Sure They Work?</a></li>
-                    <li>2015 Speaker - <a href="http://www.percona.com/live/mysql-conference-2015/sessions/mysql-cluster-ndb-introduction-and-overview">MySQL Cluster (NDB) - Intro and Overview</a></li>
+                    <li>Speaker - <a href="https://www.percona.com/live/amsterdam19/">Getting Started with Kubernetes and XtraDB Cluster</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><h3>Percona Live MySQL Conference 2019 - Austin</h3></div>
+            <div class="col-sm-9">
+                <ul style="padding-top: 12px">
+                    <li>Speaker - <a href="https://www.percona.com/live/19/sessions/percona-xtradb-cluster-tutorial">Percona XtraDB Cluster Tutorial</a></li>
+                    <li>Speaker - <a href="https://www.percona.com/live/19/sessions/orchestrator-hands-on-tutorial">Orchestrator Hands-On Tutorial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><h3>Percona Live MySQL Conference 2018</h3></div>
+            <div class="col-sm-9">
+                <ul style="padding-top: 12px">
+                    <li>Speaker - <a href="https://www.percona.com/live/18/sessions/percona-xtradb-cluster-tutorial">Percona XtraDB Cluster Tutorial</a></li>
+                    <li>Speaker - <a href="https://www.percona.com/live/18/sessions/indexes-make-queries-go-faster">Indexes - Make Queries Go Faster!</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><h3>Percona Live MySQL Conference 2017</h3></div>
+            <div class="col-sm-9">
+                <ul style="padding-top: 12px">
+                    <li>Speaker - <a href="https://www.percona.com/live/17/sessions/percona-xtradb-cluster-tutorial">Percona XtraDB Cluster Tutorial</a></li>
+                    <li>Speaker - <a href="https://www.percona.com/live/17/sessions/mysql-disk-encryption-luks">MySQL Disk Encryption with LUKS</a></li>
+                    <li>Speaker - <a href="https://www.percona.com/live/17/sessions/indexes-what-you-need-know-get-most-out-them">Indexes - Why are they important?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"><h3>Percona Live MySQL Conference 2015</h3></div>
+            <div class="col-sm-9">
+                <ul style="padding-top: 12px">
+                    <li>Speaker - <a href="//www.percona.com/live/mysql-conference-2015/sessions/your-backups-are-you-sure-they-work">Your Backups - Are you Sure They Work?</a></li>
+                    <li>Speaker - <a href="//www.percona.com/live/mysql-conference-2015/sessions/mysql-cluster-ndb-introduction-and-overview">MySQL Cluster (NDB) - Intro and Overview</a></li>
                 </ul>
             </div>
         </div>
@@ -77,15 +113,12 @@
         <div class="row">
             <div class="col-sm-3"><h3>Percona, Inc</h3></div>
             <div class="col-sm-9">
-                <h4>MySQL Architect / Consultant / Trainer <small>November 2012 - Present</small></h4>
-                <p>As a Senior MySQL Architect/Consultant, I assist many Fortune 500 companies with their MySQL woes.
-                   Anything and everything from performance tuning and backups and recovery to system design and query
-                   rewriting. I am also an expert with PHP-memcached integration and MySQL Cluster (NDB) setup and tuning.</p>
-                <ul>
-                    <li>Provide ongoing MySQL/Linux consulting services to Fortune 500 clients.</li>
-                    <li>Specializing in MySQL Cluster (NDB) for 99.999% uptime.</li>
-                    <li>Lead Trainer for Classroom-based MySQL training.</li>
-                </ul>
+                <h4>Senior Instructor / Senior MySQL Architect / Senior MySQL Consultant <small>November 2012 - Present</small></h4>
+                <p>As <em>Senior MySQL Architect / Senior MySQL Consultant</em>, I assist many Fortune 500 companies with their MySQL woes.
+                   Anything and everything from performance tuning, backups and recovery, system design and query
+                   optimization. My areas of speciality include Percona XtraDB Cluster, ProxySQL, and Orchestrator.</p>
+                <p>As <em>Senior Instructor</em>, I am responsible for the curation, creation, and delivery of various MySQL-related training topics. I have traveled 
+all over the world teaching clients on the best practices of MySQL and other current technologies.</p>
             </div>
         </div>
         <div class="row">
@@ -150,22 +183,68 @@
                 </ul>
             </div>
         </div>
-         <div class="row">
-            <div class="col-sm-3"><h3>FamilyTree DNA</h3></div>
-            <div class="col-sm-9">
-                <h4>Senior MySQL DBA<small>November 2007 - July 2008</small></h4>
-                <ul>
-                	<li>Designed, implemented and maintained fault tolerant network services in a co-location facility.</li>
-                	<li>Used HP ProCurve 2800's to implement VLANs for separating layer 3 networks and STP to provide High-Availability to individual machines.</li>
-                	<li>Used WatchGuard 750e Firebox's to create client VPN access, static VPN tunnels to branch offices, prevent DDoS attacks, manage layer 3 routing and provide NAT translation to protect back-end servers.</li>
-                	<li>Lead programmer of company sister site. Designed with 100% PHP5 using the Symfony MVC framework and MySQL Cluster 5.1 back-end.</li>
-                	<li>Designed, implemented and maintained MySQL 5.1 Cluster.</li>
-                	<li>Installed, configured and maintained linux servers using Fedora Core 8.</li>
-                	<li>Installed, configured and maintained Apache 2.2, mod_proxy, mod_security and mod_cache to act as front-end caching servers and to provide protection from various user attacks such as SQL injection.</li>
-                	<li>Setup monitoring services on linux servers using SNMP, Cacti, Zabbix and IPMonitor. Integrated Apache and MySQL into monitoring to provide additional statistical performance graphs.</li>
-                </ul>
-            </div>
-        </div>
+		<div class="row">
+		   <div class="col-sm-3"><h3>FamilyTree DNA</h3></div>
+		   <div class="col-sm-9">
+			   <h4>Senior MySQL DBA<small>November 2007 - July 2008</small></h4>
+			   <ul>
+				   <li>Designed, implemented and maintained fault tolerant network services in a co-location facility.</li>
+				   <li>Used HP ProCurve 2800's to implement VLANs for separating layer 3 networks and STP to provide High-Availability to individual machines.</li>
+				   <li>Used WatchGuard 750e Firebox's to create client VPN access, static VPN tunnels to branch offices, prevent DDoS attacks, manage layer 3 routing and provide NAT translation to protect back-end servers.</li>
+				   <li>Lead programmer of company sister site. Designed with 100% PHP5 using the Symfony MVC framework and MySQL Cluster 5.1 back-end.</li>
+				   <li>Designed, implemented and maintained MySQL 5.1 Cluster.</li>
+				   <li>Installed, configured and maintained linux servers using Fedora Core 8.</li>
+				   <li>Installed, configured and maintained Apache 2.2, mod_proxy, mod_security and mod_cache to act as front-end caching servers and to provide protection from various user attacks such as SQL injection.</li>
+				   <li>Setup monitoring services on linux servers using SNMP, Cacti, Zabbix and IPMonitor. Integrated Apache and MySQL into monitoring to provide additional statistical performance graphs.</li>
+			   </ul>
+		   </div>
+	   </div>
+	   <div class="row">
+		  <div class="col-sm-3"><h3>VoilaIP Communications</h3></div>
+		  <div class="col-sm-9">
+			  <h4>Senior PHP Programmer<small>May 2007 - October 2007</small></h4>
+			  <ul>
+			  	<li>Senior PHP programmer for company website and customer backend systems.</li>
+			  	<li>Initiated a refactoring of customer signup process; utilized Symphony MVC framework.</li>
+			  	<li>Designed and maintained database systems; MySQL</li>
+			  </ul>
+		  </div>
+	  </div>
+	  <div class="row">
+		 <div class="col-sm-3"><h3>OmNovia Technologies</h3></div>
+		 <div class="col-sm-9">
+			 <h4>Director of Development<small>October 2005 - November 2007</small></h4>
+			 <ul>
+				<li>Responsible for designing, implementing and maintaining high-availability Linux-based, Apache and MySQL server nodes in a clustered environment thus providing 99.999% uptime of company websites and databases.</li>
+				<li>Implemented email-based customer support ticket system and knowledge-base forums, which reduced customer support calls by 75 percent.</li>
+				<li>Lead programmer for all aspects of company's web-conferencing products.</li>
+				<li>Using PHP, created web-portal allowing customers to manage their own accounts, view invoices, pay bills,
+modify conference room settings and create events thus dramatically reducing support calls.</li>
+				<li>Improved system efficiency over 60 percent by converting main application from CGI to mod_perl.</li>
+				<li>Used AJAX and XML to reduce extraneous data sent by server which improved efficiency.</li>
+				<li>Using PHP, developed several in-house utilities to help eliminate redundant and tedious tasks.</li>
+				<li>Programmed in Flex/Flash ActionScript 3 to develop newest version of company conferencing product which will further reduce support calls.</li>
+			 </ul>
+		 </div>
+	 </div>
+	 <div class="row">
+		 <div class="col-sm-3"><h3>Cypress Telecommunications</h3></div>
+		 <div class="col-sm-9">
+			 <h4>IT Director<small>August 2004 -  September 2005</small></h4>
+			 <ul>
+				<li>Tested customer VoIP phones (Cisco 79XX, Polycom 501), T1 and PRI links to VoIP carriers and VoIP quality with nationwide carriers.</li>
+				<li>Designed and maintained Cisco Powered Networks (7200, 2600, 5300 Series Routers).</li>
+				<li>Designed and maintained centralized MySQL database system.</li>
+				<li>Created Web-based control panel for customers that allowed them manage their own accounts and call patterns.</li>
+				<li>Maintained company email, Web and DNS servers (qmail, apache, bind).</li>
+				<li>Released patches and bug fixes to open source VoIP PBX, Asterisk (C, MySQL)</li>
+			 </ul>
+		 </div>
+	 </div>
+
+
+
+
 
 <!--
         <hr />
@@ -202,11 +281,10 @@
             </div>
         </div>
         <hr />
-        <div class="footer">
+        <div class="footer no-print">
             <a href="mailto:matthew@matthewboehm.com">matthew@matthewboehm.com</a> <span class="sep">|</span>
-            <a href="http://facebook.com/utdrmac">utdrmac</a> <span class="sep">|</span>
-            <a href="http://github.com/utdrmac">GitHub</a> <span class="sep">|</span>
-            <a href="http://www.linkedin.com/in/matthewboehm/">LinkedIn</a>
+            <a href="//github.com/utdrmac">GitHub</a> <span class="sep">|</span>
+            <a href="//www.linkedin.com/in/matthewboehm/">LinkedIn</a>
         </div>
     </div>
 </body>
